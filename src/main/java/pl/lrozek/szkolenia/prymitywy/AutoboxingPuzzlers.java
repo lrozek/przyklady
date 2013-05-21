@@ -1,6 +1,6 @@
 package pl.lrozek.szkolenia.prymitywy;
 
-public class Caching {
+public class AutoboxingPuzzlers {
 
     public static void main( String[] args ) {
         cached();
