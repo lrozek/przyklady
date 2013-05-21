@@ -5,6 +5,7 @@ public class Caching {
     public static void main( String[] args ) {
         cached();
         nonCached();
+        npe();
 
     }
 
@@ -22,5 +23,12 @@ public class Caching {
 
         System.out.println( l1 == l2 );
         System.out.println( l1.equals( l2 ) );
+    }
+
+    private static void npe() {
+        Boolean boolean1 = null;
+        boolean boolean2 = false;
+        System.out.println( boolean1 == boolean2 );
+
     }
 }
