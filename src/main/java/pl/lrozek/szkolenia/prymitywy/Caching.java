@@ -5,7 +5,26 @@ public class Caching {
     public static void main( String[] args ) {
         cached();
         nonCached();
+        cachedUnboxing();
+        nonCachedUnboxing();
         npe();
+    }
+
+    private static void cachedUnboxing() {
+        Integer integer1 = 100;
+        Integer integer2 = 100;
+        System.out.println( integer1 <= integer2 );
+        System.out.println( integer1 >= integer2 );
+        System.out.println( integer1 == integer2 );
+
+    }
+
+    private static void nonCachedUnboxing() {
+        Integer integer1 = 100; //boxing
+        Integer integer2 = 100; //boxing
+        System.out.println( integer1 <= integer2 ); //unboxing
+        System.out.println( integer1 >= integer2 ); //unboxing
+        System.out.println( integer1 == integer2 ); //reference comparision
 
     }
 
@@ -29,6 +48,5 @@ public class Caching {
         Boolean boolean1 = null;
         boolean boolean2 = false;
         System.out.println( boolean1 == boolean2 );
-
     }
 }
