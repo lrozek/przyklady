@@ -20,8 +20,8 @@ public class AutoboxingPuzzlers {
     }
 
     private static void nonCachedUnboxing() {
-        Integer integer1 = 100; //boxing
-        Integer integer2 = 100; //boxing
+        Integer integer1 = 200; //boxing
+        Integer integer2 = 200; //boxing
         System.out.println( integer1 <= integer2 ); //unboxing
         System.out.println( integer1 >= integer2 ); //unboxing
         System.out.println( integer1 == integer2 ); //reference comparision
