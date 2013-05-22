@@ -9,8 +9,11 @@ public class Operators4Wrappers {
     public static void main( String[] args ) {
         Integer val1 = 5;
         Integer val2 = 10;
+        Integer val3 = 15;
         Integer result;
         result = val1 + val2;
         System.out.println( result );
+        System.out.println( result == val3 );
+        System.out.println( result.equals( val3 ) );
     }
 }
