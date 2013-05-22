@@ -16,6 +16,7 @@ public class AutoboxingPuzzlers {
         System.out.println( integer1 <= integer2 );
         System.out.println( integer1 >= integer2 );
         System.out.println( integer1 == integer2 );
+        System.out.println( integer1 != integer2 );
 
     }
 
@@ -25,6 +26,7 @@ public class AutoboxingPuzzlers {
         System.out.println( integer1 <= integer2 ); //unboxing
         System.out.println( integer1 >= integer2 ); //unboxing
         System.out.println( integer1 == integer2 ); //reference comparision
+        System.out.println( integer1 != integer2 ); //reference comparision
 
     }
 
@@ -33,6 +35,7 @@ public class AutoboxingPuzzlers {
         int l2 = 215; //boxing occurs, from small int to big int (Integer)
 
         System.out.println( l1 == l2 ); //l1 is unboxed, from big int (Integer) to small int
+        System.out.println( l1 != l2 ); //l1 is unboxed, from big int (Integer) to small int
         System.out.println( l1.equals( l2 ) );// l2 is boxed, from small int to big int (Integer)
     }
 
