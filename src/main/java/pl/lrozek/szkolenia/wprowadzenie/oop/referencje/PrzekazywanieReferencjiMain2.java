@@ -4,7 +4,7 @@ public class PrzekazywanieReferencjiMain2 {
 
     public static void main( String[] args ) {
         Osoba osoba = new Osoba();
-        osoba.setName( "Jozek" );
+        osoba.setName( new String( "Jozek" ) );
         osoba.wypiszImie();
         zrobCosZObiektem( osoba );
         osoba.wypiszImie();
@@ -12,7 +12,7 @@ public class PrzekazywanieReferencjiMain2 {
 
     public static void zrobCosZObiektem( Osoba osoba ) {
         osoba = new Osoba();
-        osoba.setName( "Zbyszek" );
+        String name = new String( "Zbyszek" );
+        osoba.setName( name );
     }
-
 }

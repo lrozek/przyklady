@@ -9,9 +9,14 @@ public class PrzekazywaniePrymitymowPrzezWartoscMain {
 
     }
 
-    private static void zrobCosZLiczba( int liczba ) {
+    private static int zrobCosZLiczba( int liczba ) {
         liczba = liczba + 5;
+        if ( liczba > 10 ) {
+            System.out.println( liczba );
+            return liczba;
+        }
         System.out.println( liczba );
+        return liczba;
     }
 
 }

@@ -11,7 +11,8 @@ public class PrzekazywanieReferencjiMain {
     }
 
     public static void zrobCosZObiektem( Osoba osoba ) {
-        osoba.setName( "Zbyszek" );
+        String name = new String( "Zbyszek" );
+        osoba.setName( name );
     }
 
 }
