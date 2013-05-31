@@ -18,4 +18,8 @@ public class Money {
         return value;
     };
 
+    public void setValue( float value ) {
+        this.value = value;
+    }
+
 }
