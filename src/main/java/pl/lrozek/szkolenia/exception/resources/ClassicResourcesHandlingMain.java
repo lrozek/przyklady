@@ -5,7 +5,7 @@ import java.io.InputStream;
 
 public class ClassicResourcesHandlingMain {
 
-    public static void main( String[] args ) throws IOException {
+    public static void main( String[] args ) {
         InputStream inputStream = null;
         try {
             inputStream = new DummyResource();
@@ -16,7 +16,13 @@ public class ClassicResourcesHandlingMain {
         }
         finally {
             if ( null != inputStream ) {
-                inputStream.close(); //it throw Exception and it isn't handled cause it is declared in main method
+
+                try {
+                    inputStream.close();
+                }
+                catch ( IOException e ) {
+                    throw new RuntimeException( e ); // root exception is swallowed
+                }
             }
         }
     }
